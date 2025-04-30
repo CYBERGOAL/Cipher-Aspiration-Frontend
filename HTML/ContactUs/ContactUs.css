@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding and borders are included in element width/height */
+}
+
+body {
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    /* Static gradient */
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 150, 136, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    /* Keep the text white for visibility */
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 24px;
+    /* Increase the font size for better visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow for better contrast */
+}
+
+.logo img {
+    width: 40px;
+    /* Adjust the size of the logo icon */
+    height: 40px;
+    margin-right: 10px;
+    /* Add spacing between the logo icon and the text */
+}
+
+.logo span {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto; /* Align tabs to the right */
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc80;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* Ensures the wrapper takes up available space */
+    padding: 30px;
+    margin-top: 100px; /* Adjust based on your navbar height */
+    flex: 1;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    /* Clean white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+    width: 100%;
+    /* Full width for smaller screens */
+    max-width: 600px;
+    /* Maximum width for larger screens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    /* Enhanced shadow on hover */
+}
+
+.container.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.headline {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.headline h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00796b;
+    /* Teal color for the heading */
+    font-weight: bold;
+}
+
+form label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    /* Ensures inputs stay within the container */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00796b;
+    /* Teal border on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+    /* Subtle glow on focus */
+}
+
+form.sky-form {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form.sky-form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-u {
+    background: linear-gradient(to right, #26a69a, #80cbc4); /* Updated gradient for a lighter theme */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-u:hover {
+    background: linear-gradient(to right, #00796b, #004d40); /* Darker hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: #00796b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    animation: fadeInFooter 1.5s ease-in-out;
+}
+
+footer a {
+    color: orange; /* Changed email color to orange */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 0px 0;
+    font-size: 14px;
+}
+
+/* Navbar Styling */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        /* Reduced padding for smaller screens */
+    }
+
+    .headline h2 {
+        font-size: 24px;
+        /* Smaller font size for smaller screens */
+    }
+
+    form input,
+    form textarea {
+        font-size: 13px;
+        /* Adjusted font size for inputs */
+    }
+
+    .btn-u {
+        font-size: 14px;
+        /* Adjusted button font size */
+    }
+}

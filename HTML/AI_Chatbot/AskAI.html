@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/icon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ask AI | Cipher Aspiration</title>
+    <link rel="stylesheet" href="AskAI.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="/HTML/Home/Cipher Aspiration 1.png" alt="Cipher Aspiration Logo">
+            <span>Cipher Aspiration</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/HTML/Home/Home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/HTML/Services/Services.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="/HTML/ContactUs/Contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        </ul>
+        <button class="dark-mode-toggle" id="dark-mode-toggle">
+            <i class="fas fa-moon"></i> Dark Mode
+        </button>
+    </nav>
+
+    <div class="services-tabs">
+        <a href="/HTML/Services/Services.html" class="tab-link">All Services</a>
+        <a href="/HTML/Services/Report.html" class="tab-link">Report Generation</a>
+        <a href="/HTML/Scoring/Scoring.html" class="tab-link">Scoring & Interpretation</a>
+        <a href="/HTML/Services/Appointment.html" class="tab-link">Appointment</a>
+        <a href="/HTML/Psychology_Documents/Psychology_Documents.html" class="tab-link">Psychological Documents</a>
+        <a href="/HTML/Services/Dictate.html" class="tab-link">Dictate Notes</a>
+        <a href="AskAI.html" class="tab-link active">Ask AI</a>
+        <a href="/HTML/Services/Fun.html" class="tab-link">Mind Relaxation</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-box">
+                <img src="/HTML/AI_Chatbot/AI icon.png" alt="Chat Icon" class="chat-icon">
+                <h2 class="chat-heading">Hello Doctors! I am your Companion. How can I help you today?</h2>
+
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Chat messages will appear here -->
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Type your question here..." />
+                    <button id="voice-input-btn" title="Start voice input"><i class="mic-icon">🎤</i></button>
+                    <button id="send-btn">Send</button>
+                </div>
+
+                <div class="chat-actions">
+                    <div class="personality-selector">
+                        <label for="personality">AI Personality:</label>
+                        <select id="personality">
+                            <option value="friendly">Friendly</option>
+                            <option value="professional">Professional</option>
+                            <option value="casual">Casual</option>
+                        </select>
+                    </div>
+                    <button class="clear-chat-btn" id="clear-chat-btn">Clear Chat</button>
+                </div>
+            </div>
+
+            <div class="ai-note">
+                <p><strong>Disclaimer:</strong> The responses provided by the AI are intended for informational purposes only. Please verify the information independently and treat the AI's suggestions as guidance, not definitive advice.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Cipher Aspiration. All rights reserved.</p>
+            <p>Email: <a href="mailto:CipherAspiration@gmail.com">CipherAspiration@gmail.com</a></p>
+            <p>Location: Near Nims Hospital, Jaipur, Rajasthan</p>
+            <p>Contact: +91 8441883991</p>
+        </div>
+    </footer>
+
+    <script src="AskAI.js"></script>
+</body>
+
+</html>

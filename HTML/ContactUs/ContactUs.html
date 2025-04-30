@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Aspiration | Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="ContactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="/HTML/Services/Cipher Aspiration 1.svg" alt="Cipher Aspiration Logo">
+            <span>Cipher Aspiration</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/HTML/Home/Home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/HTML/AboutUs/AboutUs.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="/HTML/T&C/Privacy.html"><i class="fas fa-user-shield"></i> Privacy Policy</a></li>
+            <li><a href="/HTML/Profile/Profile.html"><i class="fas fa-user"></i> Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Form -->
+    <main class="wrapper">
+        <div class="container content">
+            <div class="headline">
+                <h2>Contact Us</h2>
+            </div>
+            <form onsubmit="showMsg(0);return false;" method="post" class="sky-form sky-changes-3">
+                <fieldset>
+                    <section>
+                        <label class="label">Name</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-user"></i>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">E-mail</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-envelope"></i>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">Subject</label>
+                        <label class="input">
+                            <i class="icon-append fa fa-tag"></i>
+                            <input type="text" name="subject" id="subject" placeholder="Enter the subject" required>
+                        </label>
+                    </section>
+                    <section>
+                        <label class="label">Message</label>
+                        <label class="textarea">
+                            <i class="icon-append fa fa-comment"></i>
+                            <textarea rows="4" name="message" id="message" placeholder="Enter your message" required></textarea>
+                        </label>
+                    </section>
+                </fieldset>
+                <footer>
+                    <button type="submit" class="btn-u">Send message</button>
+                </footer>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Cipher Aspiration. All rights reserved.</p>
+            <p>Email: <a href="mailto:CipherAspiration@gmail.com">CipherAspiration@gmail.com</a></p>
+            <p>Location: Near Nims Hospital, Jaipur, Rajasthan</p>
+            <p>Contact: +91 8441883991</p>
+        </div>
+    </footer>
+</body>
+<Script src="ContactUs.js"></Script>
+
+</html>

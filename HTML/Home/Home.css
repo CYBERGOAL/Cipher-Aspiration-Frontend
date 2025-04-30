@@ -1,0 +1,287 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+    /* Add space between the icon and text */
+    color: #78cfee;
+    /* Adjust the color of the icons */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 150, 136, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    /* Keep the text white for visibility */
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 24px;
+    /* Increase the font size for better visibility */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow for better contrast */
+}
+
+.logo img {
+    width: 40px;
+    /* Adjust the size of the logo icon */
+    height: 40px;
+    margin-right: 10px;
+    /* Add spacing between the logo icon and the text */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc80;
+}
+
+nav ul li a img {
+    width: 20px;
+    /* Reduced width for smaller icons */
+    height: 20px;
+    /* Reduced height for smaller icons */
+    margin-right: 5px;
+    /* Adjusted spacing between the icon and the text */
+    vertical-align: middle;
+    /* Ensure proper alignment with the text */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+    margin-top: 80px;
+}
+
+.content {
+    max-width: 800px;
+    color: #3a7de0;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideIn 2s ease-in-out;
+    color: #000000; /* Changed text color */
+}
+
+.content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    animation: fadeIn 2.5s ease-in-out;
+    color: #333333; /* Changed text color */
+}
+
+.services-overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Add spacing between service cards */
+    margin-top: 30px;
+}
+
+.services-overview .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.testimonials {
+    background: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 24px;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 16px;
+    color: #555;
+    font-style: italic;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 36px;
+    color: #00796b;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #555;
+}
+
+footer {
+    background: #333;
+    color: #f5f7fa;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 4px solid #00796b;
+}
+
+footer a {
+    color: #00796b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffcc80;
+}
+
+.explore-button {
+    margin-top: 40px; /* Add space between the services and the button */
+    text-align: center; /* Center the button */
+}
+
+.explore-button .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.explore-button .btn:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

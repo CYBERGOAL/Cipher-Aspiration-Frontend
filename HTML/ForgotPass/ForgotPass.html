@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password | Cipher Aspiration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ForgotPass.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="/HTML/Home/Cipher Aspiration 1.png" alt="Cipher Aspiration Logo">
+            <span>Cipher Aspiration</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/HTML/AboutUs/AboutUs.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="/HTML/ContactUs/Contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+            <li><a href="/HTML/SignUp/SignUp.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+            <li><a href="/HTML/Login/Login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+        </ul>
+        <button class="dark-mode-toggle" id="dark-mode-toggle">
+            <i class="fas fa-moon"></i> <span id="mode-text">Dark Mode</span>
+        </button>
+    </nav>
+
+    <!-- Forgot Password Section -->
+    <div class="forgot-password-container">
+        <div class="forgot-password-card animate__animated animate__fadeIn">
+            <div class="card-header">
+                <i class="fas fa-lock fa-3x pulse-animation"></i>
+                <h2>Password Recovery</h2>
+                <p>Enter your email address below and we'll send you a link to reset your password.</p>
+            </div>
+            <form id="reset-form" onsubmit="sendResetLink(event)">
+                <div class="input-group">
+                    <label for="email" class="email-label">Email Address</label>
+                    <div class="input-field">
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="validation-message" id="email-validation">
+                        <i class="fas fa-exclamation-circle"></i> Please enter a valid email address.
+                    </div>
+                </div>
+                <button type="submit" class="auth-btn" id="submit-btn">
+                    <span id="btn-text">Send Reset Link</span>
+                    <div class="loader" id="loader"></div>
+                </button>
+            </form>
+            <div class="status-message success-message" id="success-message">
+                <i class="fas fa-check-circle"></i> Reset link sent successfully! Please check your email.
+            </div>
+            <div class="status-message error-message" id="error-message">
+                <i class="fas fa-times-circle"></i> <span id="error-text">An error occurred. Please try again.</span>
+            </div>
+            <div class="back-link">
+                <a href="/HTML/Login/Login.html"><i class="fas fa-arrow-left"></i> Back to Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Cipher Aspiration. All rights reserved.</p>
+            <p>Email: <a href="mailto:CipherAspiration@gmail.com">CipherAspiration@gmail.com</a></p>
+            <p>Location: Near Nims Hospital, Jaipur, Rajasthan</p>
+            <p>Contact: +91 8441883991</p>
+        </div>
+    </footer>
+
+    <script src="ForgotPass.js"></script>
+</body>
+
+</html>

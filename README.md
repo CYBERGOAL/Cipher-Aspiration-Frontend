@@ -1,2 +1,3 @@
 # Cipher-Aspiration-Frontend
-This is my website for Psychologists which will be hosted once all the work is done and sucessfully testing it in realworld , In this project i has done Survey with Almost 60 practicing Psychologists Accross country Resulting to create a robust solution
+This is my website for psychologists, which will be hosted once all development work is complete and successfully tested in a real-world environment. For this project, I conducted an extensive survey with approximately 60 practicing psychologists nationwide, enabling me to create a robust solution tailored to their professional needs.
+Due to privacy considerations, I am not uploading my complete codebase publicly. For internship and portfolio purposes, I have included this representative portion of the code to demonstrate my development capabilities while maintaining the confidentiality of the full solution.
